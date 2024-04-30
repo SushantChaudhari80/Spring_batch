@@ -1,8 +1,34 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+function onwerPage(){
+	console.log("onwerPage Method called");
+	 
+	window.location.href = "onwer.jsp" ;    
+}  
+
+function homePage(){
+	console.log("home Method called");
+	$.ajax({
+        type: "GET",
+        url: "welcome.jsp", // URL of the server-side code to handle the redirection
+        success: function(response) {
+            // Redirect to another page
+            window.location.href = 'http://localhost:8082/home';
+        },
+        error: function(xhr, status, error) {
+            // Handle errors if any
+            console.error(xhr.responseText);
+        }
+    });
+} 
+
+</script>
 <div class="main" >
 		<nav>
 			<div class="nav-links">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
+					<li onclick="homePage()">HOME</li>
 
 					<li><a href="#">SERVICES <img src="photos/down.png"></a>
 						<ul>
@@ -12,7 +38,7 @@
 						</ul>
 					</li>
 
-					<li><a href="onwer.html">OWNER</a></li>
+					<li onclick="onwerPage()">OWNER</li>
 
 				</ul>
 			</div>
@@ -25,42 +51,4 @@
 			<h1>Agro Feed</h1>
 			<p>www.shudleshwaragrofeed.com</p>
 		</div>
-
-<!-- This is the code of Sidebar Starting from below -->
-		<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
- 
-  
-  <h3>PRODUCTS</h3>
-  <a href="#">MAKHAN MALAI</a>
-  <a href="#">SONALI GOLI</a>
-  <a href="#">LEELA BHUSA</a>
-  <a href="#">HEERA GOLI</a>
-  <a href="#">DILUX BHUSA</a>
-  <a href="#">SHENGADANA</a>
-  <a href="#">PROTINS</a>
-
-</div>
-
-
-
-
-
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ MANU</button>  
-</div>
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "0px";
-
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 		

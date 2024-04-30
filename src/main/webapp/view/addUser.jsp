@@ -32,7 +32,9 @@ function submitButton(){
 	            success: function(response) {
 	                // Handle the response from the server
 	                console.log('Success:', response);
+	                location.reload();
 	                alert(response);
+	                
 	            },
 	           error: function(xhr, status, error) {
 	                // Handle errors
@@ -43,10 +45,26 @@ function submitButton(){
 }      
 
 </script>
+<style type="text/css">
+
+   .centered-div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px; /* Adjust width as needed */
+            height: 200px; /* Adjust height as needed */
+            background-color: #f0f0f0; /* Example background color */
+            border: 1px solid #ccc; /* Example border */
+            border-radius: 5px; /* Example border radius */
+            padding: 50px; /* Example padding */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Example box shadow */
+        }
+</style>
 </head>
-<body style="background-image: url('/view/p12.jpg'); margin: center;">
+<body style="background-image: url('/view/p12.jpg');">
 		<jsp:include page="mainMenu.jsp"></jsp:include>
-			<div>
+			<div class="centered-div" >
 					<lable>Enter Customer Name</lable><br>
 					<input type="text" id="c_name"/><br>
 					<lable>Enter Mobile Number</lable><br>

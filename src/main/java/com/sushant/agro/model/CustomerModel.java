@@ -3,8 +3,9 @@ package com.sushant.agro.model;
 
 public class CustomerModel {
 
-	private String cMobile;
+	
 	private String cName;
+	private String cMobile;
 	private String cAddress;
 	public String getcMobile() {
 		return cMobile;

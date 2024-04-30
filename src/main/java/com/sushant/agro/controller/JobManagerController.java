@@ -16,11 +16,10 @@ public class JobManagerController {
 		return "welcome";
 	}
 	
-//	@ResponseBody
-//	@GetMapping("/addUser")
-//	public String addUser(String cName, String cMobile) {
-//		System.out.println("entered parameters are :  "+cName +" : "+cMobile);
-//		return "done";
-//	}
+	@GetMapping("/onwer")
+	public String getOnwerPage() {
+		System.out.println("entered into getOnwerPage() ");
+		return "onwer";
+	}
 	
 }

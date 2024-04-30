@@ -12,12 +12,12 @@
 		<nav>
 			<div class="nav-links">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="#">SERVICES <img src="photos/down.png"></a>
+					
+					<li><a href="#">Services</a>
 						<ul>
-							<li><a href="login.html">CUSTOMER LOGIN</a></li>
-							<li><a href="history.html">ORDER HISTORY</a></li>
-							<li><a href="prices.html">PRICES</a></li>
+							<li><a href="login.html">Customer Login</a></li>
+							<li><a href="view/customerList.jsp">Show Customer List</a></li>
+							<li><a href="prices.html">Stock in Shop</a></li>
 						</ul>
 					</li>
                     <li><a href="view/addUser.jsp">Add Customer</a></li>

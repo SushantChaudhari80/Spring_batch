@@ -39,6 +39,22 @@
 	margin-top: -40px;
 }
 
+/*footer design */
+.copywrite-area{
+	color: blue;
+	font-family: serif;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: -40px;
+}
+.copywrite-area:hover{
+	color: red;
+	font-family: serif;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-top: -40px;
+}
+
  /*nevigation tabs*/
 .nav-links ul ul{
 	
@@ -115,24 +131,25 @@
 /*table*/
 table{
 	width: 800px;
-	margin-left: 300px;
+	margin-left: 200px;
 	table-layout: fixed;
 	text-align: center;
 	margin-top: 70px;
 	font-family: Arial;
-	color: #fff;
+	color:black;
 	margin-bottom: 20px;
+	align-self: center;
 }
 
 table,th,td{
-	border: 1px dotted black;
+	border: 1px solid black;
 	border-collapse: collapse;
 	padding:10px;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 th{
-	background: purple;
+	background: transparent;
 	padding: 10px;
 	font-family: serif;
 }
